@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="read.liu.com.easynotepad.WriteNoteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/video_blue"
+            android:id="@+id/imageView_write" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/tv_time_write"
+            android:text="00:00:00"
+            />
+    </LinearLayout>
+    <Button
+        android:text="点击录制"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_background"
+        android:id="@+id/button_makevideo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:id="@+id/editText_write"
+            android:hint="请输入待办事项..."
+            android:paddingLeft="5dp"
+            android:background="@null"
+            />
+        <Button
+            android:text="提交"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear"
+            android:background="@drawable/btn_background"
+            android:id="@+id/button_write" />
+    </LinearLayout>
+</RelativeLayout>
